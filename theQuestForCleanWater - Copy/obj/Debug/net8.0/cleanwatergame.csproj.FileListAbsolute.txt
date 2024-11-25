@@ -1,0 +1,137 @@
+C:\Users\gubau\Desktop\sdu\cleanwatergame\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Desktop\sdu\cleanwatergame\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Desktop\sdu\cleanwatergame\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Desktop\sdu\cleanwatergame\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\sdu\cleanwatergame\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Desktop\sdu\cleanwatergame\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\gubau\Desktop\cleanwatergame\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Desktop\cleanwatergame\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Desktop\cleanwatergame\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Desktop\cleanwatergame\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\cleanwatergame\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\gubau\Desktop\cleanwatergame\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\joccuformatare\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\Mihai\Desktop\Semester Project 1st itineration\1st itineration\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\gubau\Desktop\sasugpula\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Desktop\sasugpula\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Desktop\sasugpula\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Desktop\sasugpula\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\sasugpula\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Desktop\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
+<<<<<<< Updated upstream
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
+=======
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Documents\GitHub\SDGgameandasimita\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
+>>>>>>> Stashed changes
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
