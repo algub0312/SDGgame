@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gubau\\Documents\\GitHub\\SDGgameA\\sasugpula\\cleanwatergame.csproj": {}
+    "C:\\Users\\sanch\\OneDrive\\Escritorio\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gubau\\Documents\\GitHub\\SDGgameA\\sasugpula\\cleanwatergame.csproj": {
+    "C:\\Users\\sanch\\OneDrive\\Escritorio\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgameA\\sasugpula\\cleanwatergame.csproj",
+        "projectUniqueName": "C:\\Users\\sanch\\OneDrive\\Escritorio\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
         "projectName": "cleanwatergame",
-        "projectPath": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgameA\\sasugpula\\cleanwatergame.csproj",
-        "packagesPath": "C:\\Users\\gubau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgameA\\sasugpula\\obj\\",
+        "projectPath": "C:\\Users\\sanch\\OneDrive\\Escritorio\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
+        "packagesPath": "C:\\Users\\sanch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sanch\\OneDrive\\Escritorio\\SDGgame\\theQuestForCleanWater - Copy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gubau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sanch\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -36,8 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -58,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
