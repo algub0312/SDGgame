@@ -173,9 +173,8 @@ public class RiverUpstream : Room
                         Text.PrintWrappedText("Jamal: If you can help me remove the trash from the river, it would make a huge difference. Here, take this Fishing Net to help filter out the debris.\"", "Jamal", ConsoleColor.Yellow);
                         if (!hasFishingNet)
                         {
-                            game.Inventory.Add(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
+                            game.ReceiveItem(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
                             hasFishingNet = true;
-                            Text.PrintWrappedText("You receive a Fishing Net from Jamal. Type", "Fishing Net", ConsoleColor.DarkMagenta);
                                         Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
 
                         }
@@ -213,15 +212,15 @@ public class RiverUpstream : Room
             Text.PrintSeparator();
             Text.PrintWrappedText("Jamal: Thank you for helping clean the river. The water looks much better now!\"", "Jamal", ConsoleColor.Yellow);
             Text.PrintWrappedText("Now I can fish again and bring my family food.");
-            Text.PrintWrappedText("You can catch a fish too by usin the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
+            Text.PrintWrappedText("You can catch a fish too by using the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
 
             if (!game.Inventory.Exists(item => item.Name.ToLower() == "fishing net"))
             {
                 Text.PrintSeparator();
                 Text.PrintWrappedText("Jamal: Here, take this Fishing Net. It might help you.\"", "Jamal", ConsoleColor.Yellow);
-                game.Inventory.Add(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
+                game.ReceiveItem(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
                 hasFishingNet = true;
-                Text.PrintWrappedText("You receive a Fishing Net from Jamal. Use it to clean the river.", "Fishing Net", ConsoleColor.DarkMagenta);
+                
             }
         }
     }
