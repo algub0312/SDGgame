@@ -135,3 +135,18 @@ C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\refint\clean
 C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.pdb
 C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
 C:\Users\Mihai\Documents\GitHub\SDGgameA\sasugpula\obj\Debug\net8.0\ref\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\bin\Debug\net8.0\cleanwatergame.exe
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\bin\Debug\net8.0\cleanwatergame.deps.json
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\bin\Debug\net8.0\cleanwatergame.runtimeconfig.json
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\bin\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\bin\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.AssemblyInfoInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.AssemblyInfo.cs
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.csproj.CoreCompileInputs.cache
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.sourcelink.json
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\refint\cleanwatergame.dll
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.pdb
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\cleanwatergame.genruntimeconfig.cache
+C:\Users\gubau\Documents\GitHub\SDGgame\theQuestForCleanWater - Copy\obj\Debug\net8.0\ref\cleanwatergame.dll
