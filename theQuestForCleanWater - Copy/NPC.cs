@@ -42,7 +42,7 @@ public class NPC
             if (Name == "Dr. Eliza" && (!game.hasWaterTestingKit || !game.hasWaterPurificationTablet)) // Only prompt if player hasn't taken it yet
             {
                 Text.PrintSeparator();
-                Text.PrintWrappedText($"{Name}: \"Thank you for the help! Would you like take something from the Community Health Centre?\"");
+                Text.PrintWrappedText($"{Name}: \"Thanksss you for the help! Would you like take something from the Community Health Centre?\"");
                 Text.PrintWrappedText("1. \"Water Testing Kit\"", "1", ConsoleColor.DarkGreen);
                 Text.PrintWrappedText("2. \"Water purification tablet\"", "2", ConsoleColor.DarkGreen);
 
