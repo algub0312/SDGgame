@@ -118,7 +118,7 @@ public class ContaminatedWaterStorage : Room
                             Text.PrintWrappedText("Niko: Certainly! The repaired water tanks ensure a reliable supply of clean water, which reduces the risk of waterborne diseases like cholera and dysentery. Clean water also improves hygiene, supports agriculture by providing irrigation, and boosts the overall well-being of the community.", "Niko", ConsoleColor.Yellow);
                             game.IncreaseScore(10);
                             validResponse = true;
-                            haschosen2nd = true
+                            haschosen2nd = true;
                             break;
 
 
