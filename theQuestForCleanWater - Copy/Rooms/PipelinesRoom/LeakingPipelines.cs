@@ -4,6 +4,7 @@ namespace TextBasedGame.Rooms;
 public class LeakingPipelines : Room
 {
     public static bool HasFixedPipelines = false;
+    public bool haschosen2ndPipes = false;
 
     public LeakingPipelines()
     : base("Leaking Pipelines", "A network of old, rusted pipes leaking water. \nThe village's main water source flows through these pipes, but they're in dire need of repair.")
@@ -63,7 +64,7 @@ public class LeakingPipelines : Room
                         Text.PrintSeparator();
                         Text.PrintWrappedText("You'll need a wrench to tighten the connections.", "wrench", ConsoleColor.DarkMagenta);
                         Text.PrintWrappedText("I heard there's one in the Village Town Hall. Find it and come back here to help.", "Village Town Hall", ConsoleColor.Blue);
-                    Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command use wrench.", "use wrench", ConsoleColor.DarkMagenta);
+                        Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command use wrench.", "use wrench", ConsoleColor.DarkMagenta);
 
                         validResponse = true;
                         break;
@@ -97,6 +98,44 @@ public class LeakingPipelines : Room
             Text.PrintSeparator();
             Text.PrintWrappedText("Engineer Tomas:\"Thank you for your help!", "Engineer Tomas", ConsoleColor.Yellow);
             Text.PrintWrappedText("With the pipelines fixed everything maybe the Old Well still has a chance to revive...\"", "Old Well", ConsoleColor.Blue);
+            Text.PrintWrappedText("1. I'm glad I could help!", "1", ConsoleColor.Green);
+            Text.PrintWrappedText("2. Can you explain how fixing the leaking pipes benefits the village?", "2", ConsoleColor.Green);
+            bool validResponse = false;
+            while (!validResponse)
+            {
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        Text.PrintSeparator();
+                        validResponse = true;
+                        break;
+                    case "2":
+                        if (!haschosen2ndPipes)
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Engineer Tomas: By repairing the leaking pipes, we’ve reduced water wastage significantly. This ensures more water reaches homes and farms, supporting both daily needs and agricultural productivity. It also helps conserve water resources for future use.", "Engineer Tomas", ConsoleColor.Yellow);
+                            validResponse = true;
+                            haschosen2ndPipes = true;
+                            game.IncreaseScore(10);
+                            break;
+
+                        }
+                        else
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Engineer Tomas: You've already asked about this. Let's move on.", "Engineer Tomas", ConsoleColor.Yellow);
+                            validResponse = true;
+                            break;
+                        }
+                    default:
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Please choose a valid option (1 or 2).");
+                        break;
+
+                }
+            }
         }
     }
 }

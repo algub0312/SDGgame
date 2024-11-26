@@ -6,6 +6,7 @@ public class DryWell : Room
     public static bool hasRepairedWell = false;
     public static bool hasRustyBucket { get; set; } = false;
     public static bool decision = false;
+    public bool haschosen2ndWell = false;
 
     public DryWell()
     : base("Dry Well", "An abandoned well at the edge of the village. \nThere's just a trickle of murky water at the bottom, and it seems forgotten by most villagers.")
@@ -196,10 +197,48 @@ public class DryWell : Room
 
 
         }
-        if (Name == "Old Sara" && hasRepairedWell && hasRustyBucket)
+        else if (hasRustyBucket)
         {
             Text.PrintSeparator();
             Text.PrintWrappedText("Old Sara: Thank you for all the help offered young one!", "Old Sara", ConsoleColor.Yellow);
+            Text.PrintWrappedText("1. I'm glad I could help!", "1", ConsoleColor.Green);
+            Text.PrintWrappedText("2. Can you explain how restoring the well benefits the village?", "2", ConsoleColor.Green);
+            bool validResponse = false;
+            while (!validResponse)
+            {
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        Text.PrintSeparator();
+                        validResponse = true;
+                        break;
+                    case "2":
+                        if (!haschosen2ndWell)
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Old Sara: Restoring the dry well allows us to access groundwater, which is essential for drinking, farming, and daily activities. It also serves as a backup water source during dry seasons, helping to ensure water security for the community.", "Old Sara", ConsoleColor.Yellow);
+                            validResponse = true;
+                            haschosen2ndWell = true;
+                            game.IncreaseScore(10);
+                            break;
+
+                        }
+                        else
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Old Sara: You've already asked about this. Let's move on.", "Old Sara", ConsoleColor.Yellow);
+                            validResponse = true;
+                            break;
+                        }
+                    default:
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Please choose a valid option (1 or 2).");
+                        break;
+
+                }
+            }
         }
     }
 }

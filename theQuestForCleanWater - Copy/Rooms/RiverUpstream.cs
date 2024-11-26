@@ -7,9 +7,10 @@ public class RiverUpstream : Room
     public static bool hasFishingNet = false; // Track if the player has received the Fishing Net
     public static bool hasFish = false;
     public static bool FishRodBroken = false;
-    public static bool WantsToFish = false;
+    public bool WantsToFish = false;
     public int ProbFish { get; set; }
     public bool StopChat = false;
+    public bool haschosen2ndRiver = false;
     public RiverUpstream()
     : base("River Upstream", "A river that is the primary water source for the village, though upstream pollution is affecting water quality.")
     {
@@ -139,8 +140,7 @@ public class RiverUpstream : Room
                 if (game.CurrentRoom.RoomNPC is NPC npc)
                     npc.CompleteQuest();
                 game.IncreaseScore(10);
-                Item fish = new Item("Fish", ConsoleColor.DarkMagenta, "A fresh fish caught from the river.");
-                game.Inventory.Add(fish);
+                game.ReceiveItem(new Item("Fish", ConsoleColor.DarkMagenta, "A fresh fish caught from the river."));
                 Text.PrintWrappedText("You also catch a fish while cleaning the river.", "fish", ConsoleColor.DarkMagenta);
                 hasFish = true;
                 StopChat = true;
@@ -175,7 +175,7 @@ public class RiverUpstream : Room
                         {
                             game.ReceiveItem(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
                             hasFishingNet = true;
-                                        Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
+                            Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
 
                         }
                         validResponse = true;
@@ -207,7 +207,7 @@ public class RiverUpstream : Room
                 }
             }
         }
-        else
+        else if (!hasFish)
         {
             Text.PrintSeparator();
             Text.PrintWrappedText("Jamal: Thank you for helping clean the river. The water looks much better now!\"", "Jamal", ConsoleColor.Yellow);
@@ -220,7 +220,54 @@ public class RiverUpstream : Room
                 Text.PrintWrappedText("Jamal: Here, take this Fishing Net. It might help you.\"", "Jamal", ConsoleColor.Yellow);
                 game.ReceiveItem(new Item("Fishing Net", ConsoleColor.DarkMagenta, "A net used to catch fish or filter debris from water."));
                 hasFishingNet = true;
-                
+
+            }
+        }
+        else
+        {
+            Text.PrintSeparator();
+            Text.PrintWrappedText("Jamal: Thank you, now I can fish again and bring my family food.", "Jamal", ConsoleColor.Yellow);
+            Text.PrintWrappedText("1. I'm glad I could help!", "1", ConsoleColor.Green);
+            Text.PrintWrappedText("2. Can you explain how cleaning the river helps the village?", "2", ConsoleColor.Green);
+
+            bool validResponse = false;
+            while (!validResponse)
+            {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
+                string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+
+                switch (choice)
+                {
+                    case "1":
+                        Text.PrintSeparator();
+                        validResponse = true;
+                        break;
+
+                    case "2":
+                        if (!haschosen2ndRiver)
+                        {
+
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Jamal: By cleaning the river, you've removed pollutants that could harm both wildlife and the villagers who depend on this water source. It improves the ecosystem's health and ensures the water is safe for irrigation and daily use.", "Jamal", ConsoleColor.Yellow);
+                            validResponse = true;
+                            haschosen2ndRiver = true;
+                            game.IncreaseScore(10);
+                            break;
+
+                        }
+                        else
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Jamal: You've already asked about this. Let's move on.", "Jamal", ConsoleColor.Yellow);
+                            validResponse = true;
+                            break;
+                        }
+                    default:
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Please choose a valid option (1 or 2).");
+                        break;
+                }
             }
         }
     }
