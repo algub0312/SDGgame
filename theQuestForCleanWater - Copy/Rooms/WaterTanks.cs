@@ -3,7 +3,7 @@ namespace TextBasedGame.Rooms;
 public class ContaminatedWaterStorage : Room
 {
     public static bool hasCleanedTanks = false;
-    public static bool haschosen2nd = false;
+    public static bool haschosen2ndTanks = false;
     public ContaminatedWaterStorage()
 : base("Contaminated Water Storage Tanks", "Large, old tanks filled with water that has not been treated properly. \nThe contamination has spread through the pipes connected to them.")
     {
@@ -110,7 +110,7 @@ public class ContaminatedWaterStorage : Room
                         break;
 
                     case "2":
-                        if (!haschosen2nd)
+                        if (!haschosen2ndTanks)
                         {
 
 
@@ -118,7 +118,7 @@ public class ContaminatedWaterStorage : Room
                             Text.PrintWrappedText("Niko: Certainly! The repaired water tanks ensure a reliable supply of clean water, which reduces the risk of waterborne diseases like cholera and dysentery. Clean water also improves hygiene, supports agriculture by providing irrigation, and boosts the overall well-being of the community.", "Niko", ConsoleColor.Yellow);
                             game.IncreaseScore(10);
                             validResponse = true;
-                            haschosen2nd = true
+                            haschosen2ndTanks = true;
                             break;
 
 

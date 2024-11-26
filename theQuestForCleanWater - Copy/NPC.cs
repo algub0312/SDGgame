@@ -14,6 +14,7 @@ public class NPC
 
 
 
+
     public NPC(string name, string initialDialogue, string followUpDialogue)
     {
         Name = name;
@@ -110,12 +111,6 @@ public class NPC
             Text.PrintSeparator();
             Text.PrintWrappedText("Niko: Thank you for the help, I'm sure that the village is in good hands!", "Niko", ConsoleColor.Yellow);
         }
-        if (Name == "Jamal" && RiverUpstream.hasFish)
-        {
-            Text.PrintSeparator();
-            Text.PrintWrappedText("Jamal: Thank you, now I can fish again and bring my family food.", "Jamal", ConsoleColor.Yellow);
-        }
-
 
     }
     public void CompleteQuest()
@@ -172,7 +167,7 @@ public class NPC
             {
                 Text.PrintSeparator();
                 Text.PrintWrappedText("Old Sara: \"Using the tablets will help, but it’s not as effective as cleaning the river.\"", "Old Sara", ConsoleColor.Yellow);
-                          Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use water purification tablets.", "water purification tablets.", ConsoleColor.DarkMagenta);
+                Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use water purification tablets.", "water purification tablets.", ConsoleColor.DarkMagenta);
 
                 // Allow the use of purification tablets as a fallback
             }

@@ -12,6 +12,7 @@ public class RainwaterHarvestingSystem : Room
     public bool hasFilter = false;
     public bool installed = false;
     public static bool hasJarofRainwater = false;
+    public bool haschosen2ndRainwater = false;
 
 
     public RainwaterHarvestingSystem()
@@ -76,6 +77,7 @@ public class RainwaterHarvestingSystem : Room
                         {
                             Console.WriteLine("The filter is now secured in the system.");
                             installed = true;
+                            hasRepairedSystem = true;
 
                         }
                         else
@@ -305,11 +307,51 @@ public class RainwaterHarvestingSystem : Room
                 }
             }
         }
-        else
+        else if (hasJarofRainwater)
         {
             Text.PrintSeparator();
             Text.PrintWrappedText("Amara: Thank you for cleaning the system! Our village is already noticing the improvement.", "Amara", ConsoleColor.Yellow);
-        }
+            Text.PrintWrappedText("1. I'm glad I could help!", "1", ConsoleColor.Green);
+            Text.PrintWrappedText("2. Can you explain how repairing the system benefits the village?", "2", ConsoleColor.Green);
+            bool validResponse = false;
+            while (!validResponse)
+            {
+                string choice = Console.ReadLine();
 
+                switch (choice)
+                {
+                    case "1":
+                        Text.PrintSeparator();
+                        validResponse = true;
+                        break;
+                    case "2":
+                        if (!haschosen2ndRainwater)
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Amara: Repairing the rainwater harvesting system ensures that we can efficiently collect and store rainwater. This reduces reliance on other water sources, especially during dry periods. It also promotes sustainable water use and helps mitigate water scarcity.", "Amara", ConsoleColor.Yellow);
+                            validResponse = true;
+                            haschosen2ndRainwater = true;
+                            game.IncreaseScore(10);
+                            break;
+                        }
+                        else
+                        {
+                            Text.PrintSeparator();
+                            Text.PrintWrappedText("Amara: You've already asked about this. Let's move on.", "Amara", ConsoleColor.Yellow);
+                            validResponse = true;
+                            break;
+                        }
+                    default:
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Please choose a valid option (1 or 2).");
+                        break;
+
+
+
+                }
+
+            }
+
+        }
     }
 }
