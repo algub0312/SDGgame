@@ -51,17 +51,36 @@ public class Text
                 string after = line.Substring(wordIndex + wordToColor.Length);
 
                 // Print each part with the target word in color
-                Console.Write(before);
-                Console.ForegroundColor = color.Value;  // Set the color for the target word
-                Console.Write(word);
-                Console.ResetColor();                   // Reset to default color
-                Console.WriteLine(after);
+                foreach (char c in before)
+                {
+                    Console.Write(c);
+                    Thread.Sleep(40);
+                }
+                Console.ForegroundColor = color.Value; 
+                foreach (char character in word)
+                { // Set the color for the target word
+                    Console.Write(character);
+                    Thread.Sleep(40);
+                }
+                Console.ResetColor();  
+                foreach (char letter in after)
+                {
+                    Console.Write(letter); 
+                    Thread.Sleep(40);   
+                }                 // Reset to default color
+                Console.WriteLine();
             }
 
             else
             {
                 // If no coloring is specified or the word isn't in the line, print it as is
-                Console.WriteLine(line);
+                
+                foreach (char item in line)
+                {
+                    Console.Write(item);
+                    Thread.Sleep(40);    
+                }
+                
             }
 
             // Move to the next position

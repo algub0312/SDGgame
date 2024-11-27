@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cleanwatergame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba2389faaf9596107e77ca4cbaf730ff14a7dd61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37e1fcea7336a41a92ab69e125a21d0ca075a05e")]
 [assembly: System.Reflection.AssemblyProductAttribute("cleanwatergame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cleanwatergame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

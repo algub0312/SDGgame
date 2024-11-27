@@ -504,15 +504,18 @@ public class Game
 
     public void DisplayBasicEnding()
     {
-
+        Text.PrintSeparator();
+        Text.PrintWrappedText("You barely managed to save the village, even if the problems are solved, this is just a tempory solution to a bigger problem, you may continue your journey now.");
     }
     public void DisplayStandardEnding()
     {
-
+        Text.PrintSeparator();
+        Text.PrintWrappedText("Your village is now saved because of your help, even if there are still some problems you will still remain as a hero for this village, your home.");
     }
     public void DisplayPerfectEnding()
     {
-
+        Text.PrintSeparator();
+        Text.PrintWrappedText("You managed to solve every problem of the village, now you have to continue, more villages need help, you know may choose whether if you want to stay here or make the world an even better place.");
     }
 
     public void ReceiveItem(Item item)
