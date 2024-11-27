@@ -85,8 +85,8 @@ public class VillageTownHall : Room
             }
         }
         else
-        {
-            if (game.Score >= 165 && game.Score < 200)
+        { 
+            if (game.Score < 200)
             {
                 game.DisplayBasicEnding();
             }
