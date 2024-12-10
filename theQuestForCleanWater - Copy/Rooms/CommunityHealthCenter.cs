@@ -37,6 +37,8 @@ public class CommunityHealthCenter : Room
                 {
                     Console.Clear();
                     Text.PrintWrappedText("Dr. Eliza: \"Thank you for gathering those supplies! With these, we can improve the health of our villagers.\"", "Dr. Eliza", ConsoleColor.DarkYellow);
+                    Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command talk to get the items.", "talk", ConsoleColor.DarkMagenta);
+                    Text.PrintWrappedText("These items will help you with the Dry Well and Water Tanks.", "These items will help you with the Dry Well and Water Tanks.", ConsoleColor.Yellow);
                     game.CurrentRoom.RoomNPC.CompleteQuest(); // Mark the quest for the NPC as complete
                 }
                 else
@@ -80,7 +82,7 @@ public class CommunityHealthCenter : Room
                         Text.PrintSeparator();
                         Text.PrintWrappedText("Dr. Eliza: The Hygiene Practice Leaflet can be found in this area—it's a guide that teaches villagers how to prevent diseases by washing hands, using clean water, and properly disposing of waste.", "Hygiene Practice Leaflet", ConsoleColor.DarkMagenta);
                         Text.PrintWrappedText("As for the Medicinal Herbs, they grow near the riverbank. These herbs have natural antibacterial properties that can alleviate symptoms of waterborne diseases. They’ve been used for generations in traditional medicine.", "Medicinal Herbs", ConsoleColor.DarkMagenta);
-                        Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command give [item].", "give [item]", ConsoleColor.DarkMagenta);
+                        Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command give [item].", "give [item]", ConsoleColor.DarkMagenta);
                         Text.PrintWrappedText("Then use the command talk.", "talk", ConsoleColor.DarkMagenta);
 
                         validResponse = true;

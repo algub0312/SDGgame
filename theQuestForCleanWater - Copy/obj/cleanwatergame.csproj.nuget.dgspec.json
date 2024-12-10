@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gubau\\Documents\\GitHub\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {}
+    "C:\\Users\\Mihai\\Desktop\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gubau\\Documents\\GitHub\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {
+    "C:\\Users\\Mihai\\Desktop\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
+        "projectUniqueName": "C:\\Users\\Mihai\\Desktop\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
         "projectName": "cleanwatergame",
-        "projectPath": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
-        "packagesPath": "C:\\Users\\gubau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gubau\\Documents\\GitHub\\SDGgame\\theQuestForCleanWater - Copy\\obj\\",
+        "projectPath": "C:\\Users\\Mihai\\Desktop\\SDGgame\\theQuestForCleanWater - Copy\\cleanwatergame.csproj",
+        "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mihai\\Desktop\\SDGgame\\theQuestForCleanWater - Copy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gubau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mihai\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

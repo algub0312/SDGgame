@@ -126,12 +126,16 @@ public class RiverUpstream : Room
                     hasFishingNet = false;
                     Console.WriteLine($"Oh no! It looks like your Fishing Net broke");
                     Console.WriteLine($"you should visit the Mayor to give you help.");
+                Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
+
 
                 }
                 break;
 
             case 2:
                 Console.WriteLine("You tried fishing but didn't catch anything.");
+                Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use fishing net.", "use fishing net", ConsoleColor.DarkMagenta);
+
                 break;
 
 

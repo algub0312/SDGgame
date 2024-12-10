@@ -30,6 +30,8 @@ public class LeakingPipelines : Room
                     game.IncreaseScore(20);  // Award points for fixing the pipelines
                     HasFixedPipelines = true; // Mark the pipelines as fixed
                     Text.PrintWithColor("Pipelines successfully fixed!", ConsoleColor.Green);
+                    Text.PrintWithColor("(exits: north, south, east, west)", ConsoleColor.Green);
+
                     ((NPC)game.CurrentRoom.RoomNPC).CompleteQuest();
                 }
                 else

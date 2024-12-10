@@ -209,6 +209,8 @@ public class RainwaterHarvestingSystem : Room
                         remainingTime = 120; // Reset timer
                         StartRainwaterQuestTimer();
                         Text.PrintWrappedText("The rainwater filter is clogged and needs replacement. I've heard that the most known engineer in this town owns a new filter in his storage! Here, I think this is his key, he forgot it the last time he tried to repair the machine.", "most known engineer in this town", ConsoleColor.Red);
+                        Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Once you return use the command use filter.", "use filter", ConsoleColor.DarkMagenta);
+
                         if (!game.hasStorageKey)
                         {
                             game.ReceiveItem(new Item("Storage key", ConsoleColor.DarkMagenta, "A key to access Engineer Tomas's Workshop."));
