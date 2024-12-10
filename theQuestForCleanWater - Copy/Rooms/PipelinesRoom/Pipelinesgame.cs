@@ -27,8 +27,9 @@ public class ClearCloggedPipes
         {
             DisplayGrid();
             Console.WriteLine("Enter your move in the format 'rotate row col' (e.g., 'rotate 0 1'):");
-            string input = Console.ReadLine()?.ToLower();
+            string? input = Console.ReadLine()?.ToLower();
 
+#pragma warning disable CS8604 // Possible null reference argument.
             if (ParseCommand(input, out int row, out int col))
             {
                 RotatePipe(row, col);
@@ -49,6 +50,7 @@ public class ClearCloggedPipes
                 Console.WriteLine("Invalid command. Use format 'rotate row col'.");
                 Console.ResetColor();
             }
+#pragma warning restore CS8604 // Possible null reference argument.
         }
         return false;
     }

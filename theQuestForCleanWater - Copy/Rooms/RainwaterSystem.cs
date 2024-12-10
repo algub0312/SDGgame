@@ -15,7 +15,9 @@ public class RainwaterHarvestingSystem : Room
     public bool haschosen2ndRainwater = false;
 
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     public RainwaterHarvestingSystem()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     : base("Rainwater Harvesting System", "A system that collects rainwater but is currently clogged and neglected.")
     {
         RoomNPC = new NPC(
@@ -28,7 +30,10 @@ public class RainwaterHarvestingSystem : Room
 
     {
         string normalizedItemName = itemName.Trim().ToLower();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = game.Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         if (game.CurrentRoom.Name == "Rainwater Harvesting System" && foundItem.Name.ToLower() == "filter")
         {
             Console.Clear();
@@ -96,12 +101,15 @@ public class RainwaterHarvestingSystem : Room
             Text.PrintSeparator();
             game.CheckFinalItems(game);
         }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
     }
 
     public void StartRainwaterQuestTimer()
     {
         rainwaterTimer = new System.Timers.Timer(1000); // Set to tick every 1 second
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         rainwaterTimer.Elapsed += OnRainwaterTimedEvent;
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         rainwaterTimer.AutoReset = true; // Ensure it continues until manually stopped
         rainwaterTimer.Start(); // Start the timer
 
@@ -199,7 +207,9 @@ public class RainwaterHarvestingSystem : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -246,7 +256,9 @@ public class RainwaterHarvestingSystem : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -318,7 +330,9 @@ public class RainwaterHarvestingSystem : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {

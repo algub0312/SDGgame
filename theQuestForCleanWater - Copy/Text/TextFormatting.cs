@@ -23,7 +23,7 @@ public class Text
         Console.ResetColor();                   // Reset color back to default
         Console.WriteLine(after);               // Print the text after the word
     }
-    public static void PrintWrappedText(string text, string wordToColor = null, ConsoleColor? color = null, int lineWidth = 60, int speed = 20)
+    public static void PrintWrappedText(string text, string? wordToColor = null, ConsoleColor? color = null, int lineWidth = 60, int speed = 20)
     {
         int currentPosition = 0;
         bool skipDelay = false;
@@ -136,4 +136,36 @@ public class Text
             Console.WriteLine(line);
         }
     }
+
+
+ public static void ShowTopRightMessage(string message, CancellationToken cancellationToken)
+    {
+        while (!cancellationToken.IsCancellationRequested)
+        {
+            // Save the current cursor position
+            int originalLeft = Console.CursorLeft;
+            int originalTop = Console.CursorTop;
+
+            // Calculate the position for the top-right corner
+            int topRightX = Console.WindowWidth - message.Length - 1;
+            int topRightY = 0;
+
+            // Display the message in the top-right corner
+            Console.SetCursorPosition(topRightX, topRightY);
+            Console.Write(message);
+
+            // Restore the original cursor position
+            Console.SetCursorPosition(originalLeft, originalTop);
+
+            // Wait briefly before updating (to reduce flickering)
+            Thread.Sleep(100);
+        }
+
+        // Clear the message when the loop ends
+        int clearX = Console.WindowWidth - message.Length - 1;
+        Console.SetCursorPosition(clearX, 0);
+        Console.Write(new string(' ', message.Length));
+    }
+    
+
 }

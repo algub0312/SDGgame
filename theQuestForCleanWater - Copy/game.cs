@@ -41,7 +41,10 @@ public class Game
     private Dictionary<string, Room> rooms;
     private Parser parser = new Parser();  // Add the parser
 
+
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     public Game()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
     {
         InitializeGame();
 
@@ -154,7 +157,7 @@ public class Game
         // Wait for the player to type "play" to begin the game
         while (!isPlaying)
         {
-            string input = Console.ReadLine()?.ToLower();
+            string? input = Console.ReadLine()?.ToLower();
             if (input == "play")
             {
                 isPlaying = true;
@@ -183,10 +186,12 @@ public class Game
         while (playing)
         {
             // Waiting for the player's input
-            string input = Console.ReadLine()?.ToLower();
+            string? input = Console.ReadLine()?.ToLower();
 
             // Use the parser to interpret the command
+#pragma warning disable CS8604 // Possible null reference argument.
             Command command = Parser.ParseCommand(input);
+#pragma warning restore CS8604 // Possible null reference argument.
 
             if (command != null)
             {
@@ -196,7 +201,9 @@ public class Game
                         Console.Clear();
                         Text.PrintSeparator();
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                         CurrentRoom.ShowItems();
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
                         break;
 
                     case "take":
@@ -309,7 +316,9 @@ public class Game
         string normalizedItemName = itemName.Trim().ToLower();
 
         // Find the item in the current room by normalizing the item names for comparison
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = CurrentRoom.Items.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
         if (foundItem != null)
         {
@@ -319,6 +328,7 @@ public class Game
             Text.PrintWrappedText($"You picked up the {foundItem.Name}.", foundItem.Name, ConsoleColor.DarkMagenta);
             IncreaseScore(10); // Increase score for collecting item
 
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             if (AsciiArt.ItemAsciiArt.TryGetValue(foundItem.Name.ToLower(), out string[] asciiArt))
             {
                 Text.DisplayAsciiArt(asciiArt); // Display the ASCII art
@@ -327,6 +337,7 @@ public class Game
             {
                 Console.WriteLine("No ASCII art available for this item.");
             }
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
             if (foundItem.Name.ToLower() == "fishing net")
             {
@@ -346,7 +357,9 @@ public class Game
         string normalizedItemName = itemName.Trim().ToLower();
 
         // Check if the item exists in the player's inventory
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
         if (foundItem != null)
         {
@@ -389,7 +402,9 @@ public class Game
         }
 
         string normalizedItemName = itemName.Trim().ToLower();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
         if (foundItem != null)
         {
@@ -621,6 +636,7 @@ Console.Clear();
         Text.PrintWrappedText($"You received the {item.Name}.", item.Name, ConsoleColor.DarkMagenta);
 
         // Check if ASCII art exists for the item and display it
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         if (AsciiArt.ItemAsciiArt.TryGetValue(item.Name.ToLower(), out string[] asciiArt))
         {
             Text.DisplayAsciiArt(asciiArt); // Display ASCII art
@@ -629,6 +645,7 @@ Console.Clear();
         {
             Console.WriteLine("No ASCII art available for this item.");
         }
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
     }
 
 

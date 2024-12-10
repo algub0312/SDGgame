@@ -50,7 +50,9 @@ public class NPC
                 bool validResponse = false;
                 while (!validResponse)
                 {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                     string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                     switch (choice)
                     {
@@ -154,7 +156,9 @@ public class NPC
             Text.PrintWrappedText("1. Clean the river upstream to address the root cause.", "Clean the river upstream", ConsoleColor.Red);
             Text.PrintWrappedText("2. Use Water Purification Tablets in the well to purify the water directly, but it’s a temporary solution.", "Use Water Purification Tablets", ConsoleColor.Red);
 
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
             if (choice == "1")
             {

@@ -18,7 +18,9 @@ public class CommunityHealthCenter : Room
         string normalizedItemName = itemName.Trim().ToLower();
 
         // Find the item in the player's inventory
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = game.Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
         if (foundItem != null && game.CurrentRoom.RoomNPC != null)
         {
@@ -59,7 +61,9 @@ public class CommunityHealthCenter : Room
             Text.PrintWrappedText("You don't have that item in your inventory or there's no one here to give it to.");
         }
         string ItemName = itemName.Trim().ToLower();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         foundItem = game.Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
     }
     public override void TalkToNPC(Game game)
     {
@@ -74,7 +78,9 @@ public class CommunityHealthCenter : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -116,7 +122,9 @@ public class CommunityHealthCenter : Room
                 Text.PrintWrappedText("1. Water Testing Kit");
                 Text.PrintWrappedText("2. Water Purification Tablet");
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
                 string choice = Console.ReadLine().ToLower();
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
 
                 if (choice == "1")
                 {

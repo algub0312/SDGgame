@@ -6,7 +6,9 @@ public class Room
     public List<Item> Items { get; set; } = new List<Item>();
     public Dictionary<string, Room> Exits { get; set; } = new Dictionary<string, Room>();
 
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
     public Room(string name, string description, NPC npc = null)
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
     {
         Name = name;
         Description = description;

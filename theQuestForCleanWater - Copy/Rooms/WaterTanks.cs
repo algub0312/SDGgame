@@ -16,8 +16,11 @@ public class ContaminatedWaterStorage : Room
     public override void UseItem(Game game, string itemName)
     {
         string normalizedItemName = itemName.Trim().ToLower();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = game.Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         if (game.CurrentRoom.Name == "Contaminated Water Storage Tanks" && foundItem.Name.ToLower() == "water purification tablets")
         {
             if (!hasCleanedTanks)
@@ -39,6 +42,7 @@ public class ContaminatedWaterStorage : Room
                 Text.PrintWithColor("You already cleaned the tanks.", ConsoleColor.Yellow);
             }
         }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
     }
     public override void TalkToNPC(Game game)
     {
@@ -54,7 +58,9 @@ public class ContaminatedWaterStorage : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -102,7 +108,9 @@ public class ContaminatedWaterStorage : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {

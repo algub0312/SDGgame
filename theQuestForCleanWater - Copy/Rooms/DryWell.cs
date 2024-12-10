@@ -21,7 +21,10 @@ public class DryWell : Room
     public override void UseItem(Game game, string itemName)
     {
         string normalizedItemName = itemName.Trim().ToLower();
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         Item foundItem = game.Inventory.Find(item => item.Name.ToLower() == normalizedItemName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         if ((game.CurrentRoom.Name == "Dry Well") && foundItem.Name.ToLower() == "water testing kit")
         {
             if (RiverUpstream.hasCleanedRiver && LeakingPipelines.HasFixedPipelines && decision)
@@ -68,6 +71,8 @@ public class DryWell : Room
                 Text.PrintWrappedText("Try fixing the pipelines first, you cannot reach the water.", "fixing the pipelines", ConsoleColor.DarkRed);
             }
         }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
+#pragma warning disable CS8602 // Dereference of a possibly null reference.
         if (game.CurrentRoom.Name == "Dry Well" && foundItem.Name.ToLower() == "water purification tablets")
         {
             if (!hasRepairedWell && !RiverUpstream.hasCleanedRiver)
@@ -85,6 +90,7 @@ public class DryWell : Room
             }
 
         }
+#pragma warning restore CS8602 // Dereference of a possibly null reference.
     }
     public override void TalkToNPC(Game game)
     {
@@ -99,7 +105,9 @@ public class DryWell : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -147,7 +155,9 @@ public class DryWell : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
@@ -206,7 +216,9 @@ public class DryWell : Room
             bool validResponse = false;
             while (!validResponse)
             {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string choice = Console.ReadLine();
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 switch (choice)
                 {
