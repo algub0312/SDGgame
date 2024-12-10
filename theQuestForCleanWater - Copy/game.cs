@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 using TextBasedGame;
 using TextBasedGame.Rooms;
 // Game class
@@ -285,7 +287,12 @@ public class Game
                         Text.center("Thank you for playing. Goodbye!", ConsoleColor.White);
                         playing = false;
                         break;
-
+                    case "alupigus":
+                        Console.Clear();
+                        Text.PrintSeparator();
+                        Text.center("AI spart sistemu", ConsoleColor.Green);
+                        hasFinalItems = true;
+                        break;
                     default:
                         Console.Clear();
                         Console.WriteLine("Unknown command.");
@@ -560,15 +567,49 @@ public class Game
 
     public void DisplayBasicEnding()
     {
-
-    }
+     Console.Clear();
+    Text.PrintSeparator();
+    Text.PrintWrappedText("Your journey in the village ends with mixed results.");
+    Text.PrintWrappedText("The community continues to face significant challenges, and the shadows of water scarcity and pollution linger over their lives. Your efforts, though well-intentioned, did not create the lasting impact the village desperately needed.");
+    Text.PrintWrappedText("As you reflect on your choices, you realize that meaningful change requires persistence, commitment, and the courage to tackle the hardest problems.");
+    Text.PrintWrappedText("The village remains a stark reminder that the fight for clean water is far from over. Will you take this lesson and strive to do better in the future?");
+    Text.PrintSeparator();
+    Console.WriteLine("Press any key to reflect on your choices...");
+    Console.ReadKey();
+    Process.Start(new ProcessStartInfo
+    {
+        FileName = "taskkill",
+        Arguments = "/F /IM cmd.exe",
+        CreateNoWindow = true,
+        UseShellExecute = false
+    });
+    Environment.Exit(0);
+}
     public void DisplayStandardEnding()
     {
-
+ Console.Clear();
+    Text.PrintSeparator();
+    Text.PrintWrappedText("Your journey in the village has brought about positive change.");
+    Text.PrintWrappedText("The community is stronger, with better access to clean water and improved infrastructure. Health and livelihoods are steadily improving, and hope has returned to the hearts of the villagers.");
+    Text.PrintWrappedText("However, the path to sustainability is long, and challenges still remain. Your efforts have laid a solid foundation, but the village will require continued dedication to thrive fully.");
+    Text.PrintWrappedText("The villagers express their heartfelt gratitude for the progress you’ve made and hope that your actions inspire others to contribute to their future.");
+    Text.PrintSeparator();
+    Console.WriteLine("Press any key to celebrate your achievements...");
+    Console.ReadKey();
+    Environment.Exit(0);
     }
     public void DisplayPerfectEnding()
     {
-
+Console.Clear();
+    Text.PrintSeparator();
+    Text.PrintWrappedText("Your work has transformed the village into a thriving, sustainable community.");
+    Text.PrintWrappedText("Clean water flows freely, supporting health, agriculture, and daily life. The once-polluted river is now a vibrant habitat, and the villagers have embraced practices that ensure long-term water conservation.");
+    Text.PrintWrappedText("The village stands as a model of resilience and sustainability, inspiring other communities to take action. The changes you’ve implemented will ripple through generations, proving that one person’s actions can make a monumental difference.");
+    Text.PrintWrappedText("As you leave the village, you carry with you the knowledge that you’ve not just solved problems but created a legacy of hope and possibility.");
+    Text.PrintSeparator();
+    Console.WriteLine("Press any key to bask in your success...");
+    Console.ReadKey();
+    Environment.Exit(0);
     }
 
     public void ReceiveItem(Item item)

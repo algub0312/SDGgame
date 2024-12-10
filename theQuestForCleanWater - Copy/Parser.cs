@@ -3,7 +3,7 @@ namespace TextBasedGame
     // Parser class to handle player input
     public class Parser
     {
-        private static readonly string[] validCommands = { "go", "take", "explore", "help", "quit", "talk", "use", "inventory", "show map", "give" };
+        private static readonly string[] validCommands = { "go", "take", "explore", "help", "quit", "talk", "use", "inventory", "show map", "give", "alupigus" };
 
         public Command ParseCommand(string input)
         {
