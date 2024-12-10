@@ -18,55 +18,87 @@ public class Text
     public static void PrintWithColoredWord(string before, string word, string after, ConsoleColor color)
     {
         Console.Write(before);                  // Print the text before the word
-        Console.ForegroundColor = color;        // Set color for the word
+        Console.ForegroundColor = color;        // Set color for the words
         Console.Write(word);                    // Print the word in color
         Console.ResetColor();                   // Reset color back to default
         Console.WriteLine(after);               // Print the text after the word
     }
-    public static void PrintWrappedText(string text, string wordToColor = null, ConsoleColor? color = null, int lineWidth = 60)
+    public static void PrintWrappedText(string text, string wordToColor = null, ConsoleColor? color = null, int lineWidth = 60, int speed = 20)
     {
         int currentPosition = 0;
+        bool skipDelay = false;
+
+        // Reset the flag and start a key listener thread for this invocation
+        Thread keyListener = new Thread(() =>
+        {
+            while (!skipDelay) // Only monitor while skipDelay is false
+            {
+                if (Console.KeyAvailable)
+                {
+                    Console.ReadKey(true); // Consume the key press
+                    skipDelay = true;     // Set flag to skip delay
+                }
+            }
+        })
+        {
+            IsBackground = true
+        };
+        keyListener.Start();
 
         while (currentPosition < text.Length)
         {
-            // Find the line end position, respecting the line width
             int lineEnd = Math.Min(currentPosition + lineWidth, text.Length);
 
-            // Adjust line end if it cuts off a word
             if (lineEnd < text.Length && !char.IsWhiteSpace(text[lineEnd]))
             {
                 lineEnd = text.LastIndexOf(' ', lineEnd);
             }
 
-            // Get the substring for the current line
             string line = text.Substring(currentPosition, lineEnd - currentPosition).Trim();
 
-            // If a word to color is specified and the line contains it
             if (!string.IsNullOrEmpty(wordToColor) && line.Contains(wordToColor) && color.HasValue)
             {
-                // Split the line into parts: before, the target word, and after
                 int wordIndex = line.IndexOf(wordToColor);
                 string before = line.Substring(0, wordIndex);
                 string word = line.Substring(wordIndex, wordToColor.Length);
                 string after = line.Substring(wordIndex + wordToColor.Length);
 
-                // Print each part with the target word in color
-                Console.Write(before);
-                Console.ForegroundColor = color.Value;  // Set the color for the target word
-                Console.Write(word);
-                Console.ResetColor();                   // Reset to default color
-                Console.WriteLine(after);
-            }
+                foreach (char c in before)
+                {
+                    Console.Write(c);
+                    if (!skipDelay) Thread.Sleep(speed);
+                }
 
+                Console.ForegroundColor = color.Value;
+                foreach (char c in word)
+                {
+                    Console.Write(c);
+                    if (!skipDelay) Thread.Sleep(speed);
+                }
+
+                Console.ResetColor();
+                foreach (char c in after)
+                {
+                    Console.Write(c);
+                    if (!skipDelay) Thread.Sleep(speed);
+                }
+                Console.WriteLine();
+            }
             else
             {
-                // If no coloring is specified or the word isn't in the line, print it as is
-                Console.WriteLine(line);
+                foreach (char c in line)
+                {
+                    Console.Write(c);
+                    if (!skipDelay) Thread.Sleep(speed);
+                }
+                Console.WriteLine();
             }
 
-            // Move to the next position
             currentPosition = lineEnd + 1;
         }
+
+        // Stop the thread after the method completes
+        skipDelay = true;
     }
     public void PrintPaddedText(string text, int paddingLines = 1)
     {
