@@ -85,21 +85,50 @@ public class VillageTownHall : Room
             }
         }
         else
-        { 
-            if (game.Score < 200)
+        {
+            Console.Clear();
+            Text.PrintWrappedText("Mayor Anwar: Are you ready to finish your job? The people from our village have lots of precious information that your could gather...", "Mayor Anwar", ConsoleColor.Yellow);
+            Text.PrintWrappedText("Answer with yes/no.", "yes/no", ConsoleColor.Red);
+            bool validResponse = false;
+            while (!validResponse)
             {
-                game.DisplayBasicEnding();
-            }
-            else if (game.Score >= 200 && game.Score < 240)
-            {
-                game.DisplayStandardEnding();
-            }
-            else if (game.Score >= 240)
-            {
-                game.DisplayPerfectEnding();
-            }
+
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "yes":
+                        Text.PrintSeparator();
+                        if (game.Score < 200)
+                        {
+                            game.DisplayBasicEnding();
+                        }
+                        else if (game.Score >= 200 && game.Score < 240)
+                        {
+                            game.DisplayStandardEnding();
+                        }
+                        else if (game.Score >= 240)
+                        {
+                            game.DisplayPerfectEnding();
+                        }
+                        validResponse = true;
+                        break;
+
+                    case "no":
+
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Mayor Anwar: Go around and enjoy our village and once again thank you for your help!", "Mayor Anwar", ConsoleColor.Yellow);
+                        validResponse = true;
+                        break;
+
+                    default:
+                        Text.PrintSeparator();
+                        Text.PrintWrappedText("Please choose a valid option (1, 2, or 3).");
+                        break;
 
 
+                }
+            }
         }
     }
 

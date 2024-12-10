@@ -60,7 +60,7 @@ public class ContaminatedWaterStorage : Room
                 {
                     case "1":
                         Text.PrintSeparator();
-                        Text.PrintWrappedText("The Water Purification Tablet can be found in the Community Health Center, but first you need to help Dr. Eliza, I'm sure she will be grateful for your help. Then come back and use\"", "Community Health Center", ConsoleColor.Blue);
+                        Text.PrintWrappedText("Niko: The Water Purification Tablet can be found in the Community Health Center, but first you need to help Dr. Eliza, I'm sure she will be grateful for your help. Then come back and use\"", "Community Health Center", ConsoleColor.Blue);
                         validResponse = true;
                         break;
 
