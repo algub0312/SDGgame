@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using TextBasedGame;
 using TextBasedGame.Rooms;
-// Game class
 public class Game
 {
     private RiverUpstream riverUpstream;
@@ -13,13 +12,11 @@ public class Game
     public Room CurrentRoom { get; set; }
     public List<Item> Inventory { get; set; } = new List<Item>();
     public int Score { get; set; } = 0;
-    public bool hasMap = false;  // Boolean to track if the player has received the map
+    public bool hasMap = false; 
 
-    public bool hasWaterTestingKit = false; // Track if the player has the Water Testing Kit
-    //rainwater harvesting system
+    public bool hasWaterTestingKit = false; 
 
-
-    public bool hasWaterPurificationTablet = false;  // Track if the player has received the Water Purification Tablet
+    public bool hasWaterPurificationTablet = false; 
     public bool isQuestActice = false; // rainwater system
 
     public bool hasPurifiedWaterCrystal { get; set; } = false;
@@ -39,7 +36,7 @@ public class Game
     public Parser Parser { get => parser; set => parser = value; }
 
     private Dictionary<string, Room> rooms;
-    private Parser parser = new Parser();  // Add the parser
+    private Parser parser = new Parser();  
 
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
@@ -142,19 +139,17 @@ public class Game
         Text.center("    \\____\\|( __.'/( __.'|_|  (_)/(  (_) (_)   \\||_|  (_)  `-'   /( __.'|_| \\)\\  ", ConsoleColor.DarkCyan);
         Text.center("          (_)   (__)           (__)                            (__)        (__) ", ConsoleColor.DarkCyan);
 
-        // Brief introduction to the village
+        //  introduction to the village
         Text.PrintSeparator();
         Text.PrintWrappedText("Welcome to Aquara, a village once brimming with life and laughter, now haunted by the dry, unforgiving dust of its water crisis. Streams have slowed to a trickle, wells have turned sour, and villagers speak in whispers of the days when every drop was clear and pure. You are Alex, a resilient soul born of this land, stepping forward to unravel the village’s problems. Can you restore the water’s flow and bring Aquara back to life?", "Alex", ConsoleColor.Yellow);
         Text.PrintSeparator();
         ShowHelp();
-        // Show help commands only at the start or when the player asks for help
-
-
+        
         Text.PrintWrappedText("Type 'play' to begin your journey through Aquara.", "play", ConsoleColor.DarkCyan);
 
         bool isPlaying = false;
 
-        // Wait for the player to type "play" to begin the game
+        // type "play" to begin the game
         while (!isPlaying)
         {
             string? input = Console.ReadLine()?.ToLower();
@@ -174,21 +169,19 @@ public class Game
             }
         }
 
-        // Main game loop to explore, interact, and navigate
+        // Main game loop
         GameLoop();
     }
 
-    // Main game loop to allow continuous exploration and navigation
+    //  continuous exploration and navigation
     private void GameLoop()
     {
         bool playing = true;
 
         while (playing)
         {
-            // Waiting for the player's input
             string? input = Console.ReadLine()?.ToLower();
 
-            // Use the parser to interpret the command
 #pragma warning disable CS8604 // Possible null reference argument.
             Command command = Parser.ParseCommand(input);
 #pragma warning restore CS8604 // Possible null reference argument.
@@ -235,7 +228,7 @@ public class Game
                     case "talk":
                         if (CurrentRoom != null)
                         {
-                            CurrentRoom.TalkToNPC(this);  // Pass the game context to the NPC for interaction
+                            CurrentRoom.TalkToNPC(this);  // NPC for interaction
                         }
                         else
                         {
@@ -279,7 +272,7 @@ public class Game
                     case "show map":
                         Console.Clear();
                         Text.PrintSeparator();
-                        ShowMap(); // Call the ShowMap function here
+                        ShowMap(); //ShowMap
                         break;
 
                     case "help":
@@ -309,7 +302,7 @@ public class Game
         }
     }
 
-    // Function to handle taking an item
+    // taking an item
     private void TakeItem(string itemName)
     {
         // Normalize the input to make it case-insensitive and trim any extra spaces
@@ -341,7 +334,7 @@ public class Game
 
             if (foundItem.Name.ToLower() == "fishing net")
             {
-                RiverUpstream.hasFishingNet = true; // Track that the player has the Fishing Net
+                RiverUpstream.hasFishingNet = true; // track that the player has the Fishing Net
             }
         }
         else
@@ -363,7 +356,6 @@ public class Game
 
         if (foundItem != null)
         {
-            // Delegate the logic to the current room
             CurrentRoom.GiveItem(this, foundItem.Name);
         }
         else
@@ -408,7 +400,7 @@ public class Game
 
         if (foundItem != null)
         {
-            CurrentRoom.UseItem(this, normalizedItemName); // Delegate to the current room
+            CurrentRoom.UseItem(this, normalizedItemName);
         }
         else
         {
@@ -629,10 +621,8 @@ Console.Clear();
 
     public void ReceiveItem(Item item)
     {
-        // Add the item to the inventory
         Inventory.Add(item);
 
-        // Notify the player
         Text.PrintWrappedText($"You received the {item.Name}.", item.Name, ConsoleColor.DarkMagenta);
 
         // Check if ASCII art exists for the item and display it

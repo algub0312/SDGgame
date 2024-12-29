@@ -31,7 +31,6 @@ public class CommunityHealthCenter : Room
                 Console.WriteLine($"{game.CurrentRoom.RoomNPC.Name} takes the {foundItem.Name}.", foundItem.Name, ConsoleColor.DarkMagenta);
                 game.Inventory.Remove(foundItem);
 
-                // Increment the quest item counter
                 ((NPC)game.CurrentRoom.RoomNPC).ReceiveItem(foundItem); // Call method to track received items
 
                 // Check if both items have been given

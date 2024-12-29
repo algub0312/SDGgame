@@ -27,7 +27,7 @@ public class ContaminatedWaterStorage : Room
             {
                 Console.Clear();
                 Text.PrintWrappedText("You use the Water Purification Tablets to purify the contaminated water in the tanks. The water is now safe to drink!", "Water Purification Tablets", ConsoleColor.DarkMagenta);
-                game.IncreaseScore(20);  // Award points for purifying the water
+                game.IncreaseScore(20); 
                 (game.CurrentRoom.RoomNPC as NPC).CompleteQuest(); // Mark Niko's quest as complete
                 hasCleanedTanks = true;
                 Item purifiedWaterCrystal = new Item("Purified Water Crystal", ConsoleColor.DarkMagenta, "A rare, shimmering crystal that has absorbed the pure essence of clean water. It is highly valued by the village for its beauty and rarity.");

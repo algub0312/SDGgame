@@ -28,7 +28,6 @@ public class Text
         int currentPosition = 0;
         bool skipDelay = false;
 
-        // Reset the flag and start a key listener thread for this invocation
         Thread keyListener = new Thread(() =>
         {
             while (!skipDelay) // Only monitor while skipDelay is false
@@ -97,7 +96,7 @@ public class Text
             currentPosition = lineEnd + 1;
         }
 
-        // Stop the thread after the method completes
+     
         skipDelay = true;
     }
     public void PrintPaddedText(string text, int paddingLines = 1)
@@ -131,9 +130,7 @@ public class Text
         // Display each line of ASCII art
         foreach (string line in asciiArt)
         {
-            // Set cursor position to the calculated column
-
-            Console.WriteLine(line);
+Console.WriteLine(line);
         }
     }
 
@@ -142,7 +139,6 @@ public class Text
     {
         while (!cancellationToken.IsCancellationRequested)
         {
-            // Save the current cursor position
             int originalLeft = Console.CursorLeft;
             int originalTop = Console.CursorTop;
 
@@ -154,10 +150,8 @@ public class Text
             Console.SetCursorPosition(topRightX, topRightY);
             Console.Write(message);
 
-            // Restore the original cursor position
             Console.SetCursorPosition(originalLeft, originalTop);
 
-            // Wait briefly before updating (to reduce flickering)
             Thread.Sleep(100);
         }
 

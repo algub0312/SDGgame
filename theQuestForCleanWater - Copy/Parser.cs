@@ -10,7 +10,6 @@ namespace TextBasedGame
             input = input.ToLower().Trim(); // Normalize input
             string[] words = input.Split(' ');
 
-            // Check if the input is exactly "show map"
             if (input == "show map")
             {
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
@@ -21,7 +20,7 @@ namespace TextBasedGame
             // For other commands, use the first word as the verb
             string verb = words[0];
 
-            // Check if the verb is in the valid commands
+           
             if (Array.Exists(validCommands, command => command == verb))
             {
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.

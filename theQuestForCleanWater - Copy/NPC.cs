@@ -35,7 +35,7 @@ public class NPC
     {
         if (Name == "Dr. Eliza" && !HasCompletedQuest)
         {
-            ComplexDialogue(game);  // Evaluate the current state when talking
+            ComplexDialogue(game);  
         }
         else
         {
@@ -124,7 +124,7 @@ public class NPC
     {
         if (item.Name.ToLower() == "hygiene practice leaflet" || item.Name.ToLower() == "medicinal herbs")
         {
-            itemsReceived++; // Increment the count of received items
+            itemsReceived++; // count of received items
         }
     }
 
@@ -173,7 +173,6 @@ public class NPC
                 Text.PrintWrappedText("Old Sara: \"Using the tablets will help, but it’s not as effective as cleaning the river.\"", "Old Sara", ConsoleColor.Yellow);
                 Text.PrintWrappedText("Hint:", "Hint", ConsoleColor.DarkMagenta); Text.PrintWrappedText("Use the command use water purification tablets.", "water purification tablets.", ConsoleColor.DarkMagenta);
 
-                // Allow the use of purification tablets as a fallback
             }
         }
 

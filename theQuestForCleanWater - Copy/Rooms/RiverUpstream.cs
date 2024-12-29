@@ -3,8 +3,8 @@ namespace TextBasedGame.Rooms;
 public class RiverUpstream : Room
 {
     public static bool hasFishChoice = false;
-    public static bool hasCleanedRiver { get; set; } = false; // Track if the river has been cleaned
-    public static bool hasFishingNet = false; // Track if the player has received the Fishing Net
+    public static bool hasCleanedRiver { get; set; } = false; 
+    public static bool hasFishingNet = false; 
     public static bool hasFish = false;
     public static bool FishRodBroken = false;
     public bool WantsToFish = false;

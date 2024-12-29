@@ -127,10 +127,9 @@ public class RainwaterHarvestingSystem : Room
             int currentTop = Console.CursorTop;
 
             // Calculate the position for the bottom-right corner
-            int timerLeft = Console.WindowWidth - 20; // Reserve 20 characters for the timer display
+            int timerLeft = Console.WindowWidth - 20; 
             int timerTop = Console.WindowHeight - 1;
 
-            // Move the cursor to the bottom-right corner and clear the line
             Console.SetCursorPosition(timerLeft, timerTop);
             Console.Write(new string(' ', 20)); // Clear the timer area with spaces
 
@@ -154,7 +153,6 @@ public class RainwaterHarvestingSystem : Room
             int timerLeft = Console.WindowWidth - 20; // Reserve 20 characters for the timer display
             int timerTop = Console.WindowHeight - 1;
 
-            // Move the cursor to the bottom-right corner and clear the line
             Console.SetCursorPosition(timerLeft, timerTop);
             Console.Write(new string(' ', 20)); // Clear the timer area with spaces
 
@@ -178,7 +176,6 @@ public class RainwaterHarvestingSystem : Room
             int timerLeft = Console.WindowWidth - 20; // Reserve 20 characters for the timer display
             int timerTop = Console.WindowHeight - 1;
 
-            // Move the cursor to the bottom-right corner and clear the line
             Console.SetCursorPosition(timerLeft, timerTop);
             Console.Write(new string(' ', 20)); // Clear the timer area with spaces
 
